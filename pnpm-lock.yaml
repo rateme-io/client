@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@rateme-io/shared':
+        specifier: 1.0.2
+        version: 1.0.2
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -266,6 +269,9 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@rateme-io/shared@1.0.2':
+    resolution: {integrity: sha512-77A2gELzoqHqGWoCGVjDcNuZcvHwWmAt2MOw4zJsxszs6ec+nb3kg3FKTzVLpohi2DXDhE4Vvaf0qB9cGxDugA==, tarball: https://npm.pkg.github.com/download/@rateme-io/shared/1.0.2/e7a7398f4be197a690b99ed019f943e348f4caa2}
 
   '@rollup/rollup-android-arm-eabi@4.29.1':
     resolution: {integrity: sha512-ssKhA8RNltTZLpG6/QNkCSge+7mBQGUqJRisZ2MDQcEGaK93QESEgWK2iOpIDZ7k9zPVkG5AS3ksvD5ZWxmItw==}
@@ -913,6 +919,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -968,6 +979,9 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -1111,6 +1125,11 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.18.0
+
+  '@rateme-io/shared@1.0.2':
+    dependencies:
+      typescript: 5.7.2
+      zod: 3.24.1
 
   '@rollup/rollup-android-arm-eabi@4.29.1':
     optional: true
@@ -1743,6 +1762,8 @@ snapshots:
 
   typescript@5.6.3: {}
 
+  typescript@5.7.2: {}
+
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
@@ -1762,3 +1783,5 @@ snapshots:
   word-wrap@1.2.5: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.24.1: {}
